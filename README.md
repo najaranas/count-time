@@ -2,6 +2,10 @@
 
 **Count Time** is a modern, feature-rich web application that provides a suite of time management tools, including a stopwatch, countdown timer, and alarm clock. With a clean interface, customizable themes, and persistent settings, it's perfect for productivity, workouts, study sessions, and more.
 
+## 🌐 Live Demo
+
+**Try it out:** [najar-counttime.netlify.app](https://najar-counttime.netlify.app)
+
 ## ✨ Features
 
 ### 🏃‍♂️ Stopwatch
