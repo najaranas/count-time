@@ -1,4 +1,4 @@
-# Count Time
+# ⏱️ Count Time
 
 **Count Time** is a modern, feature-rich web application that provides a suite of time management tools, including a stopwatch, countdown timer, and alarm clock. With a clean interface, customizable themes, and persistent settings, it's perfect for productivity, workouts, study sessions, and more.
 
@@ -49,28 +49,28 @@
 
 ## 🚀 How to Use
 
-### Stopwatch
+### 🏃‍♂️ Stopwatch
 1. Open the main page (`index.html`)
 2. Click **Start** or press **S/Space** to begin timing
 3. Click **Lap** or press **L** to record lap times
 4. Click **Stop** or press **S/Space** to pause
 5. Click **Reset** or press **R** to clear the timer
 
-### Timer
+### ⏰ Timer
 1. Navigate to the **Timer** page
 2. Click **Edit** to set your desired countdown time
 3. Choose alarm sound and optional message
 4. Click **Start** to begin countdown
 5. Timer will alert you when time is up
 
-### Alarm
+### 🔔 Alarm
 1. Go to the **Alarm** page
 2. Click **Edit** to set alarm time
 3. Configure sound and optional message
 4. Click **Turn-on** to activate the alarm
 5. Alarm will trigger at the set time with sound and message
 
-### Settings
+### ⚙️ Settings
 1. Access **Settings** from the navigation menu
 2. Choose your preferred color theme
 3. Review keyboard shortcuts
@@ -114,16 +114,16 @@ count-time/
 
 ## 🛠️ Installation & Usage
 
-### Prerequisites
+### 📋 Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - No additional dependencies required
 
-### Quick Start
+### ⚡ Quick Start
 1. **Clone or download** the repository
 2. **Open `index.html`** in your web browser
 3. **Start using** the stopwatch, timer, or alarm features
 
-### Local Development
+### 💻 Local Development
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/count-time.git
