@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+/* font-family: 'Protest Guerrilla', sans-serif; */
+body.light-theme {
+    --mainBgColor: #ffffff;
+    --textColor: #121b27;
+    --navBgColor: #badff5;
+    --navTextColor: black;
+    --listBgColorHover: #ffffff;
+    --footerBgColor: #d6d6d6;
+    --listHoverColor: #171e28;
+}
+body.dark-theme {
+    --mainBgColor: #121b27;
+    --textColor: #f5deb3;
+    --navBgColor: #202834;
+    --navTextColor: #f5deb3;
+    --listBgColorHover: #171e28;
+    --footerBgColor: #32373d;
+    --listHoverColor: #121b27;
+}
+.main-content .buttons button:first-of-type {
+    width: 125px;
+    background-color: #35a1df;
+}
+.main-content .buttons button:first-of-type:hover {
+    background-color: #35a1df;
+}
+.main-content .buttons button:last-of-type {
+    background-color: #f7a708;
+}
+.main-content .buttons button:last-of-type:hover {
+    background-color: #f7a708;
+}
+.main-content .buttons button:nth-of-type(2) {
+    width: 125px;
+    background-color: #a61c1c;
+}
+.main-content .buttons button:nth-of-type(2):hover {
+    background-color: #a61c1c;
+}
+.main-content {
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.edit-pop-up .bottom .popup-start {
+    width: 125px;
+}
+.list-main {
+    padding: 0;
+}
+.main-content .local-time {
+    /* font-weight: 700; */
+    font-size: 50px;
+    color: #35a1df;
+    width: fit-content;
+    transition: all 0.2s linear;
+}
+.main-content .local-day {
+    font-size: 20px;
+    color: #f7a708;
+    width: fit-content;
+    text-wrap: nowrap;
+    transition: all 0.2s linear;
+}
+.local-time.alarm-on {
+    font-size: 130px;
+    margin-top: -60px;
+    color: #f7a708;
+}
+.local-day.alarm-on {
+    color: var(--textColor);
+    font-size: 50px;
+    width: fit-content;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .local-time.alarm-on {
+        font-size: 100px;
+        width: fit-content;
+    }
+    .local-day.alarm-on {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .local-time.alarm-on {
+        font-size: 80px;
+        width: fit-content;
+    }
+
+    .local-day.alarm-on {
+        font-size: 30px;
+        width: 250px;
+        text-wrap: nowrap;
+    }
+}
+.main-content .alarm-status {
+    text-align: center;
+}
+.main-content .alarm-status.off {
+    color: red;
+}
+.main-content .alarm-status.on {
+    color: green;
+}
+.main-content .alarm-time {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    display: flex;
+    transition: all 0.2s linear;
+    padding: 10px;
+}
+
+.main-content .alarm-time.alarm-on {
+    font-size: 50px;
+    width: fit-content;
+    color: #35a1df;
+}
+
+.main-content .alarm-time span {
+    font-family: "Ubuntu", sans-serif;
+}

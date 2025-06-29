@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stopwatch/style.css">
+    <link rel="stylesheet" href="/timer/timer.css">
+    <link rel="stylesheet" href="/alarm/alarm.css">
+    <link rel="shortcut icon" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&amp;display=swap">
+    <title>Count Time</title>
+</head>
+<body class="dark-theme">
+    <nav >
+        <div class="top">
+            <div class="title">
+                <img src="/images/logo.png" alt="">
+                <h1>Count Time</h1>
+            </div>
+        </div>
+        <div class="nav-list">
+         <ul >
+            <li class="stopwatch " >
+                <span class="material-symbols-outlined">timer</span>
+                <a>Stopwatch</a>
+            </li>
+            <li class="timer"> 
+                <span class="material-symbols-outlined">hourglass</span>
+                <a >Timer</a>
+            </li>
+            <li class="alarm checked"  >
+                <span class="material-symbols-outlined">alarm</span>
+                <a >Alarm</a>
+            </li>
+         </ul>
+        
+         <div class="bottom">
+            <ul class="menu-form">
+                <li class="feedback">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <a>Feedback</a>
+                    
+                </li>
+                <li class="settings">
+                    <span class="material-symbols-outlined">settings</span>
+                    <a>Settings</a>
+                </li>
+            </ul>
+        </div>
+       
+        
+        </div>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="text">
+                <h1>Online Alarm </h1>
+                <p>Free online alarm clock for your computer. Set an alarm and wake up in time!</p>
+            </div>
+            <div class="main-content  main-timer">
+                <div class="local-time" ></div> 
+                <div class="local-day"></div> 
+                <div class="list-main">
+                    <div class="progress">
+                        <span class="animated-span"></span>
+                        <span class="animated-span"></span>
+                        <span class="animated-span"></span>
+                        <span class="animated-span"></span>
+                    </div>
+                <div class="alarm-time">
+                    <div class="hours">00</div>
+                    <span>:</span>
+                    <div class="minutes">00</div>
+                </div>
+                </div>
+                <div class="alarm-status off">Alarm is turned off !</div>
+                <div class="buttons">
+                    <button class="turn-on"  >
+                        <span class="material-symbols-outlined">alarm_on</span>
+                        Turn-on
+                    </button>
+                    <button class="turn-off" style="display: none;">
+                        <span class="material-symbols-outlined">alarm_off</span>
+                        Turn-off
+                    </button>
+                    <button class="edit" >
+                        <span class="material-symbols-outlined">edit</span>
+                        edit
+                    </button>
+                </div>
+
+            </div>
+            <div class="guide">
+                <h3>How to use the online timer</h3>
+                <br>
+                <hr>
+                    <p>Set the hour and minute for the online alarm clock. The alarm message will appear, and the preselected sound will be played at the set time.                 
+                    <br> 
+                    When setting the alarm, you can  check the sound volume.
+                    <br>
+                    You can configure the alarm clock appearance (text color, type, and size), and these settings will be saved; they will be used when you open your web browser next time.
+                    <br>
+                    </p>
+            </div>
+            <div class="edit-pop-up">
+                <div class="top">
+                    <h3>Edit Timer</h3>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div class="main-timer-edit">
+                    <div class="main-countdown">
+                        <div class="box hours">
+                            <label for="select-hours">Hours</label>
+                            <select class="form-control" id="select-hours"><option>00</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option></select>
+                            </select>
+                        </div>
+                        <div class="box minutes">
+                            <label for="select-minutes">minutes</label>
+                            <select class="form-control" id="select-minutes"><option>00</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="main-options">
+                        <div class="sound" >
+                            <label for="sound">Sound</label>
+                            <div class="input-box">
+                            <select class="sound form-control off" id="sound"><option >Tone</option><option >Beep</option><option >Battlesip</option><option>Birds</option><option >Rain</option><option >Thunder</option></select>
+                            <span class="sound material-symbols-outlined off not-played">play_arrow</span>
+                            <input class="checkbox off " id="checkbox" type="checkbox">
+                            <label class="checkbox-text not-checked off" for="checkbox">Repeat sound</label>
+                            <div class="btn not-active">
+                                <span></span>
+                            </div>
+                            </div>
+                        </div>                   
+                        <div class="message" >
+                            <label class="message" for="message">Message</label>
+                            <div class="input-box">
+                                <input class="message input-text off" type="text" id="message">
+                                <div class="btn not-active">
+                                    <span></span>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <button class="cancel" >
+                        <span class="material-symbols-outlined">cancel</span>
+                        Cancel
+                    </button>
+                    <button class="popup-start" >
+                        <span class="material-symbols-outlined">alarm_on</span>
+                        Turn-on
+                    </button>           
+                </div>
+            </div>
+            <div class="finsh-pop-up">
+                <div class="top">
+                    <h3>Time-Up</h3>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <div class="finsh-pop-up-main">
+                    <span class="material-symbols-outlined">hourglass</span>
+                    <span class="message"></span>
+                    <span class="start-time"></span>
+                </div>
+                <div class="buttons">
+                    <button class="ok">
+                        <span class="material-symbols-outlined">done</span>
+                        OK
+                    </button>
+                </div>
+            </div>
+        </div> 
+        <button class="editColor small scroll-btn"><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
+        <button class="editColor theme-btn dark-theme"><span class="material-symbols-outlined">light_mode</span></button>
+        <button class="editColor small menu-btn close"><span class="material-symbols-outlined">menu</span></button>
+        <footer>&copy; 2024 Najjar All Rights Reserved</footer>
+    </div> 
+    <script src="/alarm/alarm.js"></script>
+</body>
+</html>

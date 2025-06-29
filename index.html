@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/stopwatch/style.css" />
+        <link rel="shortcut icon" href="/images/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&amp;display=swap" />
+        <title>Count Time</title>
+    </head>
+    <body class="dark-theme">
+        <nav>
+            <div class="top">
+                <div class="title">
+                    <img src="/images/logo.png" alt="" />
+                    <h1>Count Time</h1>
+                </div>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="stopwatch checked">
+                        <span class="material-symbols-outlined">timer</span>
+                        <a>Stopwatch</a>
+                    </li>
+                    <li class="timer">
+                        <span class="material-symbols-outlined">hourglass</span>
+                        <a>Timer</a>
+                    </li>
+                    <li class="alarm">
+                        <span class="material-symbols-outlined">alarm</span>
+                        <a>Alarm</a>
+                    </li>
+                </ul>
+
+                <div class="bottom">
+                    <ul class="menu-form">
+                        <li class="feedback">
+                            <span class="material-symbols-outlined">feedback</span>
+                            <a>Feedback</a>
+                        </li>
+                        <li class="settings">
+                            <span class="material-symbols-outlined">settings</span>
+                            <a>Settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="container">
+                <div class="text">
+                    <h1>Online Stopwatch</h1>
+                    <p>
+                        Enjoy a free online stopwatch that is quick, easy to use! Also a countdown timer, alarm and
+                        world clock!
+                    </p>
+                </div>
+                <div class="main-content main-stopwatch">
+                    <ul>
+                        <li class="minutes">00</li>
+                        <span>:</span>
+                        <li class="seconds">00</li>
+                        <span>.</span>
+                        <li class="miliseconds">00</li>
+                    </ul>
+                    <div class="buttons">
+                        <button class="reset">
+                            <span class="material-symbols-outlined">restart_alt</span>
+                            reset
+                        </button>
+                        <button class="start">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            Start
+                        </button>
+                        <!-- stop and flag button  -->
+                        <button class="lap" style="display: none">
+                            <span class="material-symbols-outlined">flag</span>
+                            lap
+                        </button>
+                        <button class="stop" style="display: none">
+                            <span class="material-symbols-outlined">pause</span>
+                            stop
+                        </button>
+                        <!-- stop and flag button  -->
+                    </div>
+                    <div class="lap-items">
+                        <table style="display: none">
+                            <thead>
+                                <tr>
+                                    <th>Lap</th>
+                                    <th>Time</th>
+                                    <th>Total Time</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: #edac5b; font-family: 'Protest Guerrilla', sans-serif"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="guide">
+                    <h3>How to use the online stopwatch</h3>
+                    <br />
+                    <hr />
+                    <p>
+                        The online stopwatch counts the time to the millisecond that passes after you click the "Start"
+                        button. It allows you to add laps. If you close the stopwatch, the value and laps will be
+                        automatically saved. If the period is sufficiently large, the number of days passed will be
+                        displayed, too.
+                        <br />
+                        You can configure the accuracy for displaying fractions of a second in the stopwatch settings.
+                        <br />
+                        Click the "Start" or "Stop" buttons to start or stop the stopwatch. Click the "Lap" button to
+                        add one lap and the current stopwatch value to the lap list. To reset laps and the stopwatch
+                        value, click the "Reset" button (the button appears when the stopwatch is stopped).
+                        <br />
+                        You can configure the stopwatch appearance (text color, type, and size), and these settings will
+                        be saved; they will be used when you open your web browser next time.
+                        <br />
+                        You can add links to online stopwatches with various time values and lap lists to your browser's
+                        Favorites.
+                    </p>
+                </div>
+            </div>
+            <button class="editColor small scroll-btn">
+                <span class="material-symbols-outlined">keyboard_arrow_up</span>
+            </button>
+            <button class="editColor theme-btn dark-theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button class="editColor small menu-btn close">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <footer>&copy; 2024 Najjar All Rights Reserved</footer>
+        </div>
+
+        <script src="/stopwatch/script.js"></script>
+    </body>
+</html>

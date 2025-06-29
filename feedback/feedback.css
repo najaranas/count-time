@@ -1,0 +1,93 @@
+body.light-theme {
+  --mainBgColor: #ffffff;
+  --textColor: #121b27;
+  --navBgColor: #badff5;
+  --navTextColor: black;
+  --listBgColorHover: #ffffff;
+  --footerBgColor: #d6d6d6;
+  --listHoverColor: #171e28;
+}
+body.dark-theme {
+  --mainBgColor: #121b27;
+  --textColor: #f5deb3;
+  --navBgColor: #202834;
+  --navTextColor: #f5deb3;
+  --listBgColorHover: #171e28;
+  --footerBgColor: #32373d;
+  --listHoverColor: #121b27;
+}
+.main .main-content {
+  width: 100%;
+  padding: 0;
+}
+.main .main-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+@media (min-width: 1100px) {
+  .main .main-content form {
+    width: 80%;
+  }
+}
+.text p {
+  text-align: left;
+  padding: 10px;
+}
+.main .main-content form input,
+textarea {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9b7d58;
+  color: var(--textColor);
+  width: 100%;
+}
+.main .main-content label {
+  width: fit-content;
+  font-size: 15px;
+}
+.main .main-content form input::placeholder,
+textarea::placeholder {
+  color: #62676f;
+}
+.main .main-content form button {
+  background: transparent;
+  color: var(--textColor);
+  border: 1px solid #9b7d58;
+  transition: all ease 0.5s;
+}
+.main .main-content form button:hover {
+  background-color: var(--textColor);
+
+  color: var(--navBgColor);
+}
+
+form .experience {
+  border-radius: 10px;
+  width: fit-content;
+}
+form .experience .text {
+  font-size: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+form .experience .emojis {
+  margin-top: 10px;
+}
+form .experience .emojis span {
+  font-size: 70px;
+  width: fit-content;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  form .experience .emojis span {
+    font-size: 50px;
+  }
+}
+form .experience .emojis span.checked {
+  background-color: transparent;
+}

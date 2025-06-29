@@ -1,0 +1,382 @@
+body.light-theme {
+    --mainBgColor: #ffffff;
+    --textColor: #121b27;
+    --navBgColor: #badff5;
+    --navTextColor: black;
+    --listBgColorHover: #ffffff;
+    --footerBgColor: #d6d6d6;
+    --listHoverColor: #171e28;
+}
+body.dark-theme {
+    --mainBgColor: #121b27;
+    --textColor: #f5deb3;
+    --navBgColor: #202834;
+    --navTextColor: #f5deb3;
+    --listBgColorHover: #171e28;
+    --footerBgColor: #32373d;
+    --listHoverColor: #121b27;
+}
+
+.buttons button:first-of-type {
+    background-color: #35a1dfa3;
+}
+
+.buttons button:first-of-type:hover {
+    background-color: #35a1df;
+}
+
+.buttons button:nth-of-type(2) {
+    background-color: #f7a708a4;
+}
+.buttons button:nth-of-type(2):hover {
+    background-color: #f7a708;
+}
+
+.buttons button:nth-of-type(3) {
+    background-color: #c90b0baf;
+}
+.buttons button:nth-of-type(3):hover {
+    background-color: #a61c1c;
+}
+
+/* popup button */
+.bottom button:first-of-type {
+    background-color: #b30404;
+}
+.bottom button:first-of-type:hover {
+    background-color: #ff0000;
+}
+.bottom button:last-of-type {
+    background-color: #35a1dfa3;
+}
+.bottom button:last-of-type:hover {
+    background-color: #35a1df;
+}
+.main-content .list-main ul li.off,
+.main-content .list-main ul span.off {
+    display: none;
+}
+.main-content .list-main ul li.on,
+.main-content .list-main ul span.on {
+    display: block;
+}
+/* popup button */
+
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.list-main {
+    position: relative;
+    padding: 4px;
+}
+.main-timer ul {
+    padding: 10px;
+}
+.progress .animated-span {
+    position: absolute;
+    pointer-events: none;
+    height: 0px;
+    width: 0px;
+    background-color: green;
+    pointer-events: none;
+}
+.progress .animated-span:nth-of-type(1) {
+    left: 0;
+    top: 0;
+    animation: topbottomspan linear 1s forwards;
+    animation-play-state: paused;
+}
+.progress .animated-span:nth-of-type(2) {
+    right: 0;
+    top: 0;
+    animation: leftrightspan linear 1s forwards 1s;
+    animation-play-state: paused;
+}
+.progress .animated-span:nth-of-type(3) {
+    right: 0;
+    bottom: 0;
+    animation: topbottomspan linear 1s forwards 2s;
+    animation-play-state: paused;
+}
+.progress .animated-span:nth-of-type(4) {
+    left: 0;
+    bottom: 0;
+    animation: leftrightspan linear 1s forwards 3s;
+    animation-play-state: paused;
+}
+
+@keyframes topbottomspan {
+    0% {
+        height: 4px;
+        width: 0%;
+    }
+    100% {
+        height: 4px;
+        width: 100%;
+    }
+}
+
+@keyframes leftrightspan {
+    0% {
+        height: 0px;
+        width: 4px;
+    }
+    100% {
+        height: 100%;
+        width: 4px;
+    }
+}
+
+.edit-pop-up,
+.finsh-pop-up {
+    background-color: var(--navBgColor);
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    top: -600px;
+    opacity: 0;
+    transition: all 0.7s ease;
+    z-index: 9999;
+}
+/* @media (min-width: 900px) {
+  .edit-pop-up {
+    left: -100px;
+  }
+  .finsh-pop-up {
+    left: -50px;
+  }
+} */
+.finsh-pop-up.opened {
+    opacity: 1;
+    top: 200px;
+}
+
+.edit-pop-up.opened {
+    opacity: 1;
+    top: 100px;
+}
+.edit-pop-up .top,
+.finsh-pop-up .top {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.edit-pop-up .top span,
+.finsh-pop-up .top span {
+    cursor: pointer;
+}
+.edit-pop-up .main-timer-edit .main-countdown {
+    padding: 30px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.edit-pop-up .main-timer-edit .main-countdown .box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 50px;
+}
+.edit-pop-up .main-timer-edit .main-options .input-box {
+    height: 50px;
+}
+.edit-pop-up .main-timer-edit .main-countdown .box select,
+.input-box select,
+.input-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.edit-pop-up .main-timer-edit .main-options {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+}
+@media (max-width: 800px) {
+    .edit-pop-up .main-timer-edit .main-options .sound .form-control {
+        width: 30%;
+    }
+}
+
+.edit-pop-up .main-timer-edit .main-options .sound #checkbox {
+    width: fit-content;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    accent-color: var(--textColor);
+    height: 20px;
+    width: 20px;
+}
+.edit-pop-up .main-timer-edit .main-options .sound .checkbox-text {
+    font-size: 15px;
+    width: 55px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+@media (max-width: 400px) {
+    .edit-pop-up .main-timer-edit .main-options .sound #checkbox {
+        height: 15px;
+        width: fit-content;
+    }
+    .edit-pop-up .main-timer-edit .main-options .sound .checkbox-text {
+        font-size: 10px;
+    }
+}
+.edit-pop-up .main-timer-edit .main-options .input-box {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+.edit-pop-up .main-timer-edit .main-options .input-box select,
+.input-box input {
+    width: 60%;
+}
+.edit-pop-up .main-timer-edit .main-options .input-box .material-symbols-outlined {
+    display: block;
+    font-size: 50px;
+    cursor: pointer;
+}
+.edit-pop-up .main-timer-edit .btn {
+    width: 60px;
+    height: 30px;
+    background-color: #d4dae7;
+    border-radius: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.edit-pop-up .main-timer-edit .btn span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    left: 6px;
+    top: 5px;
+    transition: all 0.7s ease;
+    pointer-events: none;
+}
+.main-options .off {
+    pointer-events: none;
+    opacity: 0.2;
+}
+.main-options .on {
+    pointer-events: auto;
+    opacity: 1;
+}
+.edit-pop-up .bottom {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    background-color: var(--navBgColor);
+}
+@media (max-width: 570px) {
+    .edit-pop-up .main-timer-edit .main-options .input-box .material-symbols-outlined {
+        font-size: 30px;
+    }
+}
+
+@keyframes soundactiveAnimation {
+    0% {
+        left: 6px;
+        top: 5px;
+    }
+    100% {
+        left: 35px;
+        top: 5px;
+        background-color: green;
+    }
+}
+@keyframes messageactiveAnimation {
+    0% {
+        left: 6px;
+        top: 5px;
+    }
+    100% {
+        left: 35px;
+        top: 5px;
+        background-color: green;
+    }
+}
+@keyframes popupanimation {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 120px;
+    }
+}
+.finsh-pop-up {
+    width: 60%;
+}
+.finsh-pop-up .finsh-pop-up-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    font-size: 30px;
+}
+.finsh-pop-up .finsh-pop-up-main .message {
+    font-weight: 700;
+    max-width: 400px;
+    display: block;
+}
+.finsh-pop-up .finsh-pop-up-main .material-symbols-outlined {
+    font-size: 50px;
+    animation: spananimation 0.2s linear infinite;
+}
+
+@keyframes spananimation {
+    0% {
+        transform: translateX(5px);
+        rotate: 10deg;
+    }
+    100% {
+        rotate: -10deg;
+        transform: translateX(-5px);
+    }
+}
+.finsh-pop-up .buttons {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.finsh-pop-up .buttons button:first-of-type {
+    background-color: #59b87e;
+}
+
+.finsh-pop-up .buttons button:last-of-type {
+    background-color: #fff30a;
+}
+/* .main .container:not(.finishPopupElement) {
+    filter: blur(5px);
+  }
+   */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 00, 0, 0.7);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+}

@@ -1,0 +1,89 @@
+body.light-theme {
+  --mainBgColor: #ffffff;
+  --textColor: #121b27;
+  --navBgColor: #badff5;
+  --navTextColor: black;
+  --listBgColorHover: #ffffff;
+  --footerBgColor: #d6d6d6;
+  --listHoverColor: #171e28;
+}
+body.dark-theme {
+  --mainBgColor: #121b27;
+  --textColor: #f5deb3;
+  --navBgColor: #202834;
+  --navTextColor: #f5deb3;
+  --listBgColorHover: #171e28;
+  --footerBgColor: #32373d;
+  --listHoverColor: #121b27;
+}
+.main-content {
+  padding: 0;
+  align-items: start;
+}
+.main-content h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.main-content .colors {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main-content .colors .color-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  padding: 4px;
+  opacity: 0.3;
+  cursor: pointer;
+  background-color: transparent;
+}
+.main-content .colors .color-box.checked {
+  opacity: 1;
+}
+
+.main-content .colors .color-box span {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+.short-cut {
+  background-color: var(--footerBgColor);
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.short-cut .box,
+.left {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.short-cut .left span {
+  display: block;
+  color: gray;
+}
+.short-cut .left div {
+  background-color: #4b5563;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px gainsboro;
+  min-width: 40px;
+  text-align: center;
+}
+body.light-theme .short-cut .left div {
+  background-color: #a1a4a8;
+  box-shadow: 0px 1px 3px #4b5563;
+}
+.short-cut .right {
+  min-width: 100px;
+}
+body {
+  height: 100vh;
+}
