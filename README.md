@@ -126,7 +126,7 @@ count-time/
 ### 💻 Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/count-time.git
+git clone https://github.com/najaranas/count-time.git
 
 # Navigate to the project directory
 cd count-time
